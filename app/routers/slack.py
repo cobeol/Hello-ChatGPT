@@ -22,7 +22,7 @@ async def slack(request: Request, message: dict, background_tasks: BackgroundTas
 
     if request.headers.get("x-slack-retry-num"):
         return Response("ok")
-
+    
     if not is_user_allowed(message):
         return Response("ok")
 
