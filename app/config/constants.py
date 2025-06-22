@@ -19,10 +19,11 @@ enable_grounding = os.environ.get("enable_grounding", False)
 # For Claude
 claude_model = os.environ.get("claude_model", "claude-3-5-sonnet@20240620")
 
-
 # Image
 MAX_FILE_BYTES = int(os.environ.get("max_file_bytes", 1_000_000))
 
+# ✅ Allowed Slack Users Only (Comma-separated IDs)
+allowed_users = set(os.environ.get("allowed_users", "").split(","))
 
 class LLMModel(Enum):
     GPT = "gpt"
