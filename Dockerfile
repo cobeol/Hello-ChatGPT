@@ -1,4 +1,4 @@
-FROM python:3.10-slim AS base
+FROM python:3.11-slim AS base
 
 WORKDIR /opt/app
 COPY . /opt/app
