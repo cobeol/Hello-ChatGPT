@@ -8,7 +8,7 @@ slack_token = os.environ.get("slack_token")
 max_token = int(os.environ.get("max_token", "2048"))
 
 # For ChatGPT
-openai_token = os.environ.get("OPENAI_API_KEY")
+openai_token = os.environ.get("openai_token")
 gpt_model = os.environ.get("gpt_model", "gpt-3.5-turbo")
 
 # For Gemini

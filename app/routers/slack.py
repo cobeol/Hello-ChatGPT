@@ -9,7 +9,6 @@ from app.services.slack import message_process
 
 router = APIRouter()
 
-
 @router.post("/gpt")
 async def slack(request: Request, message: dict, background_tasks: BackgroundTasks, headers=Header(default=None)):
     if message.get("challenge"):
